@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Seznam sporočil</title>
 </head>
 <body>
-<h1>Sporocila</h1>
+    <h1>Seznam Sporočil</h1>
 
-{% for sporocilo in seznam %}
-<p>{{ sporocilo.besedilo }};{{ sporocilo.nastanek }}
-    <a href="/sporocilo/{{ sporocilo.key.id() }}">link</a></p>
-{% endfor %}
+    <!-- Pomembno je da zanko for v Jinji zaključimo z {% endfor %} ! Enako velja za if zanko.  -->
+    {% for sporocilo in seznam %}
+
+        <p>{{ sporocilo.besedilo }};{{ sporocilo.nastanek }}
+            <!-- Z ukazom .key-id() dobimo iz sporocilo objekta ven njegov ID -->
+        <a href="/sporocilo/{{ sporocilo.key.id() }}">link</a></p>
+    {% endfor %}
 
 </body>
 </html>

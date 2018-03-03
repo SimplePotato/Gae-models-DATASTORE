@@ -68,7 +68,7 @@ class ListHandler(BaseHandler):
         #  z Sporocilo.query(Sporocilo.izbrisano == False).fetch() pa vzamemo iz baze le tista sporočila
         #  katera imajo polje izbrisano nastavljeno na False. "Glej v models.py"
 
-        seznam =Sporocilo.query(Sporocilo.izbrisano == False).fetch()
+        seznam = Sporocilo.query(Sporocilo.izbrisano == False).fetch()
         params = {"seznam": seznam}
         return self.render_template("seznam.html", params=params)
 

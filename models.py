@@ -3,7 +3,7 @@
 from google.appengine.ext import ndb
 
 
-class Sporocilo(ndb.Model):
+class Sporocilo(ndb.Models):
     besedilo = ndb.StringProperty()
     # z ukazom auto_now_add=True se bo čas inastanka avtomatično zapisal, ko se bo vnos zapisal v bazo.
     nastanek = ndb.DateTimeProperty(auto_now_add=True)

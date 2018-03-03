@@ -6,15 +6,15 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
-    <h1>Brezglava sporočila</h1>
+    <body>
+        <h1>Brezglava sporočila</h1>
 
-    <form method="POST" action="/rezultat">
-        <label for="sporocilo">vpisi kar želiš...</label>
-        <!-- name="input-sporocilo" se navezuje na RezultatHandler v main.py kateri ta post sprejme
-             saj forma sama po sebi ne naredi nič. Za to poskrbi backend.-->
-        <input type="text" id="sporocilo" name="input-sporocilo">
-        <button type="submit">poslji</button>
-    </form>
-</body>
+        <form method="POST" action="/rezultat">
+            <label for="sporocilo">vpisi kar želiš...</label>
+            <!-- name="input-sporocilo" se navezuje na RezultatHandler v main.py kateri ta post sprejme
+                 saj forma sama po sebi ne naredi nič. Za to poskrbi backend.-->
+            <input type="text" id="sporocilo" name="input-sporocilo">
+            <button type="submit">poslji</button>
+        </form>
+    </body>
 </html>

@@ -123,7 +123,7 @@ class IzbrisHandler(BaseHandler):
 
         #  prikazemo potrditveno spletno stran.
         #  Ker si pošljemo sporočilo, lahko prikažemo še kakšno informacijo o sporočilu.
-        return self.render_template("izbrisi.html", params=params)
+        return self.render_template("ask_delete.html", params=params)
 
     def post(self, sporocilo_id):
         sporocilo = Sporocilo.get_by_id(int(sporocilo_id))

@@ -77,7 +77,7 @@ class ListHandler(BaseHandler):
 
 class PosameznoSporociloHandler(BaseHandler):
     def get(self, sporocilo_id):
-        #  Z metodo .get_by_id() baze vzamemo sporocilo, katerega id je enak podanemu
+        #  Z metodo .get_by_id() iz baze vzamemo sporocilo, katerega id je enak podanemu
         sporocilo = Sporocilo.get_by_id(int(sporocilo_id))
         params = {"sporocilo": sporocilo}
         return self.render_template("posamezno_sporocilo.html", params=params)

@@ -10,7 +10,7 @@ class Sporocilo(ndb.Model):
     # Vsakič ko bomo ustvarili novo sporočilo, bo vrednost v njegovem polju
     # izbrisano avtomatično False.
     # Ko pa bomo v IzbrisHandlerju sporocilo izbrisali, mu bomo  spremenili to polje v True.
-    izbrisano = ndb.BooleanProperty(dafault=False)
+    izbrisano = ndb.BooleanProperty(default=False)
 
 
     # Vsi ostali property-ji na tej povezavi https://cloud.google.com/appengine/docs/python/ndb/properties#types.

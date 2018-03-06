@@ -5,12 +5,15 @@
     <title>Sporočilo</title>
 </head>
 <body>
-<p>Vnos sporočila: {{ sporocilo.besedilo }}</p>
-<p>Datum sporočila: {{ sporocilo.nastanek }}</p>
-<p>ID sporočila: {{ sporocilo.key.id() }}</p>
 
-<a href="/sporocilo/{{ sporocilo.key.id() }}/edit"><button>Edit</button></a>
-<a href="/sporocilo/{{ sporocilo.key.id() }}/delete>"><button>Delete</button></a>
+    <h1>Sporočilo</h1>
+
+    <p> Vnos sporočila: {{ sporocilo.besedilo }} </p>
+    <p> Datum sporočila: {{ sporocilo.nastanek }} </p>
+    <p> ID sporočila: {{ sporocilo.key.id() }} </p>
+
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/edit"><button>Edit</button></a>
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/delete>"><button>Delete</button></a>
 
 </body>
 </html>

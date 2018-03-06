@@ -83,6 +83,7 @@ class PosameznoSporociloHandler(BaseHandler):
         return self.render_template("posamezno_sporocilo.html", params=params)
 
 
+########################################################################################################################
 
 
 class UrediHandler(BaseHandler):
@@ -134,6 +135,9 @@ class IzbrisHandler(BaseHandler):
         #  In zapisemo nazaj v bazo
         sporocilo.put()
         self.redirect_to("seznam-sporocil")
+
+
+########################################################################################################################
 
 
 app = webapp2.WSGIApplication([
